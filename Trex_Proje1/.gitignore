@@ -1,0 +1,21 @@
+# Visual Studio user-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+
+# VS Code settings
+.vscode/
+
+# Rider project files
+.idea/
+*.sln.iml
+
+# Other
+*.log
+*.cache
+*.vs/
