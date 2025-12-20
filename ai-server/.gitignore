@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Temporary media files
+tmp_*
+tts_files/
+*.wav
+*.mp3
+*.pcm
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -1,0 +1,20 @@
+<include>
+  <!-- Set to your public IP provided to NetGSM (used for Contact/SDP). -->
+  <X-PRE-PROCESS cmd="set" data="external_sip_ip=159.20.68.17"/>
+  <X-PRE-PROCESS cmd="set" data="external_rtp_ip=159.20.68.17"/>
+  <!-- Bind addresses: use 0.0.0.0 so FreeSWITCH will bind on all local interfaces.
+    Keep external_sip_ip/external_rtp_ip as your public IP so Contact/SDP advertise it. -->
+  <X-PRE-PROCESS cmd="set" data="internal_sip_ip=0.0.0.0"/>
+  <X-PRE-PROCESS cmd="set" data="external_sip_bind_ip=0.0.0.0"/>
+  <!-- Typical FreeSWITCH convention: internal listens on 5060, external on 5080. If your
+    network/provider expects the reverse, change accordingly. Previously these were
+    swapped which can cause binding mismatches. -->
+  <X-PRE-PROCESS cmd="set" data="internal_sip_port=5060"/>
+  <X-PRE-PROCESS cmd="set" data="external_sip_port=5080"/>
+  <!-- Default FreeSWITCH RTP port range is 16384-32768; adjust if your router forwards a different range -->
+  <X-PRE-PROCESS cmd="set" data="rtp_start_port=16384"/>
+  <X-PRE-PROCESS cmd="set" data="rtp_end_port=32768"/>
+  <X-PRE-PROCESS cmd="set" data="default_codec_prefs=PCMA,PCMU"/>
+</include>
+
+
