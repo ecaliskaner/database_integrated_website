@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/vendor/autoload.php'; // If using composer, but user might not have it.
+// require_once __DIR__ . '/vendor/autoload.php'; // Not needed if using extension directly
 // Instructions say: "You are expexted to use MongoDB\Driver\Manager class"
 // So I will use the driver directly without composer autoload if possible, or assume extension is loaded.
 
