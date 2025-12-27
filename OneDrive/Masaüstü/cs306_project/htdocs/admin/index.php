@@ -10,7 +10,7 @@
 <body>
     <nav class="navbar">
         <a href="index.php" class="navbar-brand">
-            🛡️ Admin Panel
+             Admin Panel
         </a>
         <div class="nav-links">
             <span style="color: #cbd5e1; font-size: 0.9rem;">Logged in as Admin</span>
@@ -25,7 +25,7 @@
         
         <div class="card">
             <?php
-            // Get all active tickets
+            
             $filter = ['status' => true];
             $query = new MongoDB\Driver\Query($filter);
             $cursor = $manager->executeQuery($namespace, $query);
