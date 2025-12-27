@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href="index.php" class="navbar-brand">🏠 Real Estate System</a>
+        <a href="index.php" class="navbar-brand"> Real Estate System</a>
         <div class="nav-links">
             <a href="index.php">Dashboard</a>
             <a href="support_list.php">Support</a>
@@ -59,7 +59,7 @@
                 
                 $date = date('Y-m-d');
                 $time = date('H:i:s');
-                $customer_id = 1; // Dummy customer
+                $customer_id = 1; 
 
                 $sql_insert = "INSERT INTO Appointment (Appointment_ID, Appointment_Date, Appointment_Time, Customer_ID, Agent_ID) VALUES ($next_id, '$date', '$time', $customer_id, $agent_id)";
                 
