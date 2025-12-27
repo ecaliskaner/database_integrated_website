@@ -244,15 +244,15 @@ INSERT INTO Review VALUES
 (9, 5, 'Loved the process.', '2025-02-20', 7, 4),
 (10, 3, 'Average experience.', '2025-02-21', 5, 8);
 
--- ========================================================
+
+
 -- TRIGGERS AND STORED PROCEDURES
--- ========================================================
 
 -- Trigger 1: trg_increment_appointment_count
--- First, add appointment_count to Agent table
+
 ALTER TABLE Agent ADD COLUMN appointment_count INT DEFAULT 0;
 
--- Initialize existing counts
+
 UPDATE Agent a SET appointment_count = (
     SELECT COUNT(*) FROM Appointment ap WHERE ap.Agent_ID = a.Agent_ID
 );
