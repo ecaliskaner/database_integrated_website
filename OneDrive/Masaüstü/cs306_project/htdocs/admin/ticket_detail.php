@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href="index.php" class="navbar-brand">🛡️ Admin Panel</a>
+        <a href="index.php" class="navbar-brand"> Admin Panel</a>
         <div class="nav-links">
             <a href="index.php">Dashboard</a>
         </div>
@@ -34,8 +34,8 @@
                 );
                 $manager->executeBulkWrite($namespace, $bulk);
                 echo "<div class='message success'>Ticket marked as Resolved!</div>";
-                // Redirect or refresh?
-                // header("Location: index.php"); // Optional
+                
+                
             } elseif (isset($_POST['comment'])) {
                 $new_comment = "Admin: " . $_POST['comment_text'];
                 $bulk = new MongoDB\Driver\BulkWrite;
