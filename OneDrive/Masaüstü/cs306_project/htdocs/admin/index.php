@@ -59,7 +59,7 @@
                 </div>
             <?php else: ?>
                 <div style="text-align: center; padding: 3rem;">
-                    <p style="font-size: 1.2rem; margin-bottom: 1rem;">🎉 All caught up!</p>
+                    <p style="font-size: 1.2rem; margin-bottom: 1rem;"> All caught up!</p>
                     <p style="color: var(--secondary-color);">No active support tickets found.</p>
                 </div>
             <?php endif; ?>
