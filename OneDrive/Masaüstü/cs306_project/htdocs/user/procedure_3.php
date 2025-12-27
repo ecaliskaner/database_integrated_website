@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href="index.php" class="navbar-brand">🏠 Real Estate System</a>
+        <a href="index.php" class="navbar-brand"> Real Estate System</a>
         <div class="nav-links">
             <a href="index.php">Dashboard</a>
             <a href="support_list.php">Support</a>
