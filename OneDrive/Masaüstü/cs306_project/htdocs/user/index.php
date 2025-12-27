@@ -9,7 +9,7 @@
 <body>
     <nav class="navbar">
         <a href="index.php" class="navbar-brand">
-            🏠 Real Estate System
+             Real Estate System
         </a>
         <div class="nav-links">
             <a href="index.php">Dashboard</a>
