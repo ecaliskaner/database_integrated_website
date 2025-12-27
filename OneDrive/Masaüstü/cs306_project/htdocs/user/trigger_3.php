@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href="index.php" class="navbar-brand">🏠 Real Estate System</a>
+        <a href="index.php" class="navbar-brand"> Real Estate System</a>
         <div class="nav-links">
             <a href="index.php">Dashboard</a>
             <a href="support_list.php">Support</a>
@@ -24,9 +24,9 @@
             </header>
 
             <?php
-            // Reset for demo purposes if requested
+            
             if (isset($_POST['reset'])) {
-                $offer_id = 1; // using offer 1 for demo
+                $offer_id = 1; 
                 $conn->query("UPDATE Offer SET Status = 'Pending' WHERE Offer_ID = $offer_id");
                 $conn->query("UPDATE Property SET Status = 'Available' WHERE Property_ID = (SELECT Property_ID FROM Offer WHERE Offer_ID = $offer_id)");
                 echo "<div class='message'>System Reset for Demo</div>";
