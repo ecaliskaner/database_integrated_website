@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href="index.php" class="navbar-brand">🏠 Real Estate System</a>
+        <a href="index.php" class="navbar-brand"> Real Estate System</a>
         <div class="nav-links">
             <a href="index.php">Dashboard</a>
             <a href="support_list.php">Support</a>
@@ -53,7 +53,7 @@
                     if ($conn->query($sql_insert) === TRUE) {
                         echo "<div class='message success'>Payment added successfully! Amount: $amount</div>";
                     } else {
-                        // This block usually catches SQL errors if exceptions are off
+                        
                         echo "<div class='message error'>Error: " . $conn->error . "</div>";
                     }
                 } catch (Exception $e) {
