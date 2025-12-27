@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href="index.php" class="navbar-brand">🏠 Real Estate System</a>
+        <a href="index.php" class="navbar-brand"> Real Estate System</a>
         <div class="nav-links">
             <a href="index.php">Dashboard</a>
             <a href="support_list.php">Support</a>
@@ -32,10 +32,8 @@
 
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $date = $_POST['date'];
-                $time = $_POST['time']; // Just HH:MM
-                // Ensure time has seconds for exact match or use strict comparison
-                // MySQL TIME type usually is HH:MM:SS. 
-                // Let's append :00 if needed or rely on string comp.
+                $time = $_POST['time']; 
+                
                 if(strlen($time) == 5) $time .= ":00";
 
                 
