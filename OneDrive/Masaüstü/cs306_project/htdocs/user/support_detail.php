@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href="index.php" class="navbar-brand">🏠 Real Estate System</a>
+        <a href="index.php" class="navbar-brand"> Real Estate System</a>
         <div class="nav-links">
             <a href="index.php">Dashboard</a>
             <a href="support_list.php">Support</a>
@@ -28,7 +28,7 @@
         // Handle Comment Submission
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $new_comment = $_POST['comment'];
-            // Prepend timestamp or user info if feasible, for now just text
+            
             $formatted_comment = "[" . date('Y-m-d H:i') . "] User: " . $new_comment;
             
             $bulk = new MongoDB\Driver\BulkWrite;
@@ -95,7 +95,7 @@
                 <?php endif; ?>
             </div>
 
-            <!-- Right Column: User Info -->
+            
             <div>
                 <div class="card">
                     <h3>User Info</h3>
