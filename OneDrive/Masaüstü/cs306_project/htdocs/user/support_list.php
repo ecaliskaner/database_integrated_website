@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href="index.php" class="navbar-brand">🏠 Real Estate System</a>
+        <a href="index.php" class="navbar-brand"> Real Estate System</a>
         <div class="nav-links">
             <a href="index.php">Dashboard</a>
             <a href="support_list.php">Support</a>
@@ -24,7 +24,7 @@
             </header>
 
             <div style="text-align: right; margin-bottom: 2rem;">
-                <a href="support_create.php" class="btn">＋ Create New Ticket</a>
+                <a href="support_create.php" class="btn">+ Create New Ticket</a>
             </div>
 
             <?php
